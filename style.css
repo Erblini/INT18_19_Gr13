@@ -10,3 +10,72 @@
 
 /* PJESA 3 : FOOTER , COPYRIGHT */
 
+footer {
+  
+    margin: 0px;
+    padding: 0px;
+    background-color: #232323;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+footer .bllok {
+
+    display: inline-block;
+    margin-right: 20px;
+    margin-left: 20px;
+}
+
+footer .bllok .FROM_THE_BLOG {
+
+  font-size: 16px;
+  font-family: Georgia-Regular;
+  color: rgb(92, 92, 92);
+  margin-bottom: 30px;
+  margin-top: 25px;
+}
+
+footer .bllok .Blog_Post_Title {
+
+  font-size: 15px;
+  font-family: Georgia-Regular;
+  color: rgb(152, 152, 152);
+  line-height: 1.2;
+  margin: 0px;
+}
+
+footer .bllok .Posted_by_Admin{
+
+  margin-top: 2px; 
+  font-size: 13px;
+  font-family: Georgia-Regular;
+  color: rgb(117, 117, 117);
+  line-height: 1.2;
+}
+
+@font-face {
+  
+    font-family: Georgia-Regular;
+    src: url(../Fonts/Georgia-Regular.ttf);
+}
+
+footer .bllok .Vestibul{
+
+  font-size: 12px;
+  font-family: Georgia-Regular;
+  color: rgb(152, 152, 152);
+  line-height: 1.6;
+  width: 193px;
+  margin: 0px;
+}
+
+footer .bllok .Read {
+
+    color: #1194b2;
+    margin-top: 1px;
+    float: right;
+    font-size: 14px;
+    cursor: pointer; 
+}
+

@@ -1,1 +1,39 @@
 
+
+/* shtimi i fontit */
+@font-face {
+    font-family: angltrr;
+    src: url(font\angltrr.ttf);
+}
+
+/* trupi i slideshow */
+.slideshow-quotes {
+  font-family: helvetica, sans-serif;
+  margin:0;
+  position: relative;
+  background: #ebebeb;
+}
+
+/* quotes */
+.quotes {
+  display: none;
+  padding: 30px;
+  text-align: center;
+}
+
+/* next dhe previous */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 30%;
+  width: auto;
+  margin-top: -30px;
+  padding: 16px;
+  user-select: none;
+}
+
+/* vendosja e "next" ne te djathte */
+.next {
+  position: absolute;
+  right: 0;
+}

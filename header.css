@@ -121,3 +121,31 @@ header h4
     font-family:Georgia;
 
 }
+header .navbar
+{   
+  
+    height: 88px;
+    float: right;
+    margin-right: 167px;
+    
+}
+
+header .navbar p
+{   
+   
+    margin-top: 35px;
+    font-size: 14px;
+    color: #666666;
+   
+}
+
+header .navbar p a
+{
+    
+    text-decoration: none;
+    color: #666666;
+    padding-left: 20px;
+    padding-right: 20px; 
+    font-family:Georgia Regular;
+}
+/*-----------HEADER MBARON KETU ---------------*/

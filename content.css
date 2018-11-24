@@ -1,39 +1,73 @@
+/* pjesa slideshow+content */
+.main {
+    background-color: #ebebeb;
+}
 
 
 /* shtimi i fontit */
 @font-face {
     font-family: angltrr;
-    src: url(font\angltrr.ttf);
+    src: url(Fonts/angltrr.ttf);
 }
+
 
 /* trupi i slideshow */
 .slideshow-quotes {
-  font-family: helvetica, sans-serif;
-  margin:0;
-  position: relative;
-  background: #ebebeb;
+    font-family: helvetica, sans-serif;
+    margin: 0px;
+    position: relative;
+    background: #ebebeb;
 }
+
+
+/* vijat kufizuese tek quotes */
+.fadingline {
+    display: block;
+    border: none;
+    color: #ebebeb;
+    height:1px;
+    background:black;
+    background: -webkit-gradient(radial, 50% 50%, 0, 50% 50%, 670, from(#757575), to(#ebebeb));
+}
+
 
 /* quotes */
 .quotes {
-  display: none;
-  padding: 30px;
-  text-align: center;
+    display: flex;
+    padding: 30px;
+    text-align: center;
 }
+
 
 /* next dhe previous */
 .prev, .next {
-  cursor: pointer;
-  position: absolute;
-  top: 30%;
-  width: auto;
-  margin-top: -30px;
-  padding: 16px;
-  user-select: none;
+    cursor: pointer;
+    position: absolute;
+    top: 30%;
+    width: auto;
+    margin-top: -30px;
+    padding: 16px;
+    user-select: none;
 }
+
 
 /* vendosja e "next" ne te djathte */
 .next {
   position: absolute;
   right: 0;
+}
+
+
+/* ngjyra dhe fonti i quotave */
+q {
+  font-family: angltrr;
+  font-style: italic;
+  font-size: 30px;
+  color: #757575;
+}
+
+
+/* ngjyra e fontit tek autori i quotes */
+.autori {
+  color: #00134d;
 }

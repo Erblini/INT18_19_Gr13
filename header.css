@@ -149,3 +149,54 @@ header .navbar p a
     font-family:Georgia Regular;
 }
 /*-----------HEADER MBARON KETU ---------------*/
+/*-----------IMAGE SWAP FILLON KETU------------*/
+.image-swap
+{
+    display:flex;
+    justify-content: center;
+    background-color: #ebebeb;
+}
+.image-swap .small-wrap 
+{
+    border:1px solid #c8c8c8;
+    display:inline-block;
+    flex-wrap: wrap;
+    margin: 9.5px;
+}
+.image-swap .small-wrap #small-image
+{
+  
+    margin:2px;
+    width:60px;
+    height:60px;
+    background-color: #333333;
+}
+.image-swap .small-image-container
+{
+     display:inline-block;
+    width:175px;
+    margin-top:30.5px;
+    margin-left:10px;
+}
+.image-swap .big-wrap
+{
+     display:inline-block;
+    border:1px solid #c8c8c8;
+}
+.image-swap .big-wrap #big-image
+{
+    
+    background-color: #333333;
+    width:770px;
+    height:386px;
+    margin:9px;
+    font-size: 39.91px;
+}
+.image-swap .big-image-container
+{
+    
+    margin-top:40px;
+    margin-left:15px;
+    margin-right: 20px;
+}
+/*-----------IMAGE SWAP MBARON KETU------------*/

@@ -48,7 +48,7 @@ footer .bllok .Posted_by_Admin{
     src: url(../Fonts/Georgia-Regular.ttf);
 }
 
-footer .bllok .Vestibul{
+footer .bllok .blog_post{
 
   font-size: 14px;
   font-family: Georgia-Regular;
@@ -60,11 +60,9 @@ footer .bllok .Vestibul{
 
 footer .bllok .Read {
 
-    color: #1194b2;
     margin-top: 10px;
     float: right;
-    font-size: 14px;
-    cursor: pointer; 
+    font-size: 14px; 
 }
 
 footer .bllok .Quick_Links{
@@ -105,13 +103,12 @@ footer .bllok .Latest_Tweets {
   margin-top: 25px;
 }
 
-footer .bllok .namehere{
+footer .bllok a{
 
     color: #1194b2;
-    cursor: pointer; 
 }
 
-footer .bllok .Justoid {
+footer .bllok .tweet {
 
   font-size: 14px;
   font-family: Georgia-Regular;

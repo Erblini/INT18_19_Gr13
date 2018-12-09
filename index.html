@@ -87,8 +87,8 @@
 				<p class="autori">- John Updike</p>
 			</div>
 
-					<a class="next"> <img src="Fotot/next.png" alt=""></a>
-					<a class="prev"> <img src="Fotot/previous.png" alt=""></a>
+					<a class="next" onclick="plusSlides(1)"> <img src="Fotot/next.png" alt=""></a>
+					<a class="prev" onclick="plusSlides(-1)"> <img src="Fotot/previous.png" alt=""></a>
 
 			<span class="fadingline"> </span>
 </div>
@@ -216,6 +216,26 @@
 	<div class="copyright">
                 <p>Copyright &copy; 2012 Domain Name - All rights reserved <span class="template">Template by OS templates</span></p>
             </div>
+	
+	<script>
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("quotes");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
+  }
+  slides[slideIndex-1].style.display = "block";
+}
+</script>
 
 </body>
 </html>

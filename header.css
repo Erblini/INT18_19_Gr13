@@ -148,6 +148,11 @@ header .navbar p a
     padding-right: 20px; 
     font-family:Georgia Regular;
 }
+header .navbar p a:hover
+{
+    color:#A9A9A9;
+    font-size:14px;
+}
 /*-----------HEADER MBARON KETU ---------------*/
 /*-----------IMAGE SWAP FILLON KETU------------*/
 .image-swap

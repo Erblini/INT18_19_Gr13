@@ -156,3 +156,51 @@ header .navbar p a:hover
 }
 
 /*-----------HEADER MBARON KETU ---------------*/
+/*-----------CSS PER GALLERY FILLON KETU-------*/
+.content1
+{
+    width: 965px;
+    padding:10px;
+    background-color:  #070100;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+
+
+}
+.content1 #desc h1
+{   
+    display:inline-block;
+    color:white;
+    font-size: 25px;
+    font-family: Georgia Regular;
+    font-style: italic;
+}
+.content1 #desc p
+{   
+    display:inline-block;
+    color:white;
+    font-size:20px;
+    font-family: "Times New Roman", serif;
+    font-style:italic;
+}
+.content2
+{
+    width:50%;
+    height:50px;
+    padding:5px;
+    border-radius:15px;
+    border:5px dotted #19070B;
+    background-color: #A4A4A4;
+    margin-top:10px;
+    margin-left:auto;
+    margin-right:auto;
+    text-align:center;
+    -webkit-transition: width 2s; /* For Safari 3.1 to 6.0 */
+    transition: width 2s;
+
+}
+.content2:hover{
+    width:200px;
+
+}

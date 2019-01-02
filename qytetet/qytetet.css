@@ -39,3 +39,49 @@ h2 {
     color: #000000;
     font-style: italic;
 }
+figure
+{
+    margin:10px 90px 10px 90px;
+}
+figcaption
+{
+    font-family:sans-serif;
+    font-style: italic;
+
+}
+img{
+    width:360px;
+    height:235px;
+    border-radius: 8px;
+}
+#video{
+    margin:30px 350px 30px 350px;
+}
+.tooltip {
+  position: relative;
+  display: inline-block;
+  margin-left:470px;
+  border-bottom: 3px dotted red;
+  font-style: italic;
+  font-size: 20px;
+}
+
+.tooltip .tooltiptext {
+  visibility: hidden;
+  width: 120px;
+  background-color: purple;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px 0;
+  
+  /* Position the tooltip */
+  position: absolute;
+  z-index: 1;
+  top: -5px;
+  left: 105%;
+}
+
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+}

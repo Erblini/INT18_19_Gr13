@@ -1,1 +1,121 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Contact</title>
+  <script>
+    function allowDrop(ev){
+      ev.preventDefault();
+    }
+    function drag(ev){
+      ev.dataTransfer.setData("text",ev.target.id);
 
+    }
+    function drop(ev){
+      ev.preventDefault();
+      var data=ev.dataTransfer.getData("text");
+      ev.target.appendChild(document.getElementById(data));
+    }
+  </script>
+</head>
+<body style="background-color: #808080;">
+
+
+    <div id="kutiaFormes" style="background-color:	#ebebeb ;margin-right:200px; padding:10px; border: solid 1px black" >
+    <p style="color:black;">Please leave us a message!</p>
+  <form name="myForm" action="" autocomplete="on">
+    <p>Name: <input name="Name" type="text" autocomplete="off" name="Name" placeholder="Name.."></p>
+
+   <p>Surname: <input name="Surname" type="text" autocomplete="off" name="Surname" placeholder="Surname.."></p>
+
+    <p>Message:
+    <input name="Message" type="text" name="Message" placeholder="Message.." size="100"/></p>
+  
+   <p><input type="submit" value="Send" onclick="myFunction()" >
+    <input type="reset" value="Delete"></p></form>
+                <p id="message"></p> 
+                   <img id="envelopelogo" src="Fotot/envelope.jpg"  hidden="true"/>
+                   <canvas id="myCanvas" width="200" height="150" style="background-color: white; border:solid 3px black; margin-left:890px; margin-top: -300px;">
+                    Your browser does not support the HTML5 canvas tag.
+                  </canvas>
+                   <canvas id="myCanvas1" width="200" height="120" style="background-color: white; border:solid 3px black; margin-left:1100px; margin-top: 2px;">
+                    Your browser does not support the HTML5 canvas tag.
+                  </canvas>
+                  <script>
+  
+   var c = document.getElementById("myCanvas1");
+   var ctx = c.getContext("2d");
+   ctx.strokeText("To : Classical-Art.com",5,70);
+   ctx.strokeText("From : Erblin",5,80);
+   ctx.strokeText("Date : 12/6/2018",5,90);
+   ctx.moveTo(0,0);
+   ctx.lineTo(100,50);
+   ctx.lineTo(200,0);
+   ctx.stroke();
+
+</script>
+            </div>
+                <script >
+                function myFunction() {
+    var message, x,y,z;
+    message = document.getElementById("message");
+    message.innerHTML = "";
+    x = document.forms["myForm"]["Name"].value;
+    y = document.forms["myForm"]["Surname"].value;
+    z = document.forms["myForm"]["Message"].value;
+    try { 
+        if(x == "") { throw alert("Name must be filled out!")}
+                if(y == "") { throw alert("Surname must be filled out!")}
+           
+       if(z == "") { throw alert("Please write a message!!")}
+         else{
+           alert("Your message was sent successfully.Thank You!")};
+      
+    }
+  
+      catch(padefinuar) {
+        message.innerHTML = "Contact is " + padefinuar;
+    }
+    
+};
+</script>
+<script>
+  window.onload=function(){
+    var canvas =document.getElementById("myCanvas");
+    var ctx=canvas.getContext("2d");
+    var img=document.getElementById("envelopelogo");
+    ctx.drawImage(img,20,10);
+  };
+  </script>
+
+  <div class="harta">
+    
+    <p style="color:black;background-color:#ebebeb; border-style:dotted; font-size:25px;margin-right: 800px; padding:10px;">Location map</p>
+        
+           <p>Klikoni butonin p&euml;r t&euml; par&euml; koordinatat e lokacionit tuaj.</p>
+
+<button onclick="getLocation()">Click me!</button>
+
+<p id="demo"></p>
+
+<div id="div1" style=" width:500px;height:300px;border:3px solid black ; resize:both; overflow:auto;" ondrop="drop(event)" ondragover="allowDrop(event)">
+  <img src="Fotot/map.png" width="650" height="320" draggable="true" ondragstart="drag(event)" id="drag1"></div><br /><br />
+<div id="div2" style="width:500px;height:300px;border:3px solid black; resize:both; overflow:auto;" ondrop="drop(event)" ondragover="allowDrop(event)"></div></div>
+ <script>
+var x = document.getElementById("demo");
+
+function getLocation() {
+    if (navigator.geolocation) {
+        navigator.geolocation.getCurrentPosition(showPosition);
+    } else { 
+        x.innerHTML = "Geolocation is not supported by this browser.";
+    }
+}
+
+function showPosition(position) {
+    x.innerHTML = "Latitude: " + position.coords.latitude + 
+    "<br>Longitude: " + position.coords.longitude;
+}
+</script>
+  </div>
+</body>
+</html>

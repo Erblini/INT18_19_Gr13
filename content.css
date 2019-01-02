@@ -1,12 +1,17 @@
+body  {
+  background-color: #ebebeb;
+}
+
 /* pjesa slideshow+content */
 .main {
-    background-color: #ebebeb;
+
+      background-color: #ebebeb;
 }
 
 
 /* shtimi i fontit */
 @font-face {
-    font-family: angltrr;
+    font-family: angltrrj;
     src: url(Fonts/angltrr.ttf);
 }
 
@@ -22,12 +27,13 @@
 
 /* vijat kufizuese tek quotes */
 .fadingline {
-    display: block;
-    border: none;
-    color: #ebebeb;
-    height:1px;
-    background:black;
-    background: -webkit-gradient(radial, 50% 50%, 0, 50% 50%, 670, from(#757575), to(#ebebeb));
+
+   display:block;
+    border:none;
+    color:white;
+    height:2px;
+    background:#d4d4d4;
+    background: -webkit-gradient(radial, 50% 50%, 0, 50% 50%, 550, from(#c8c8c8), to(#ebebeb));
 }
 
 
@@ -75,7 +81,7 @@ q {
 
 /* trupi content */
 .content {
-  margin: 30px 15px ;
+  margin: 15px 183px 0px ;
   color: #717171;
   font-family: angltrr;
   display: flex;
@@ -85,18 +91,20 @@ q {
 
 /* block content 1/2 */
 div#block1 {
+   
   background-color: #ebebeb;
   margin: 10px;
-  width: 50%;
+  width: 2000px;
   float: left;
 }
 
 
 /* block content 1/4 */
 div#block2 {
+ 
   background-color: #ebebeb;
   margin: 10px;
-  width: 25%;
+  width:150%;
   float: left;
 }
 
@@ -105,7 +113,7 @@ div#block2 {
 div#block3 {
   background-color: #ebebeb;
   margin: 10px;
-  width: 25%;
+  width: 150%;
   float: left;
 }
 
@@ -140,4 +148,8 @@ div#block3 {
 h3 {
     font-size: 21px;
     color: #5c5c5c;
+}
+
+.paragrafi1 {
+  font-size: 13px;
 }

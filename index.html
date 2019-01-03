@@ -1,5 +1,9 @@
-<html>
+<html manifest="mainfest.appcache">
+
     <head>
+
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width; initial-scale=1; maximum-scale=1">
         <link rel="stylesheet" href="header.css">
         <link rel="stylesheet" href="content.css">
         <link rel="stylesheet" href="footer.css">
@@ -15,7 +19,7 @@
     <body>
         <div class="top-bar">
             <div id="rectangle"></div>
-            <div id="contact"><p>Tel: 11111 2222222222 | Mail: <a href="https://outlook.live.com/owa/"/>info@classicalart.com</p></div>
+            <div id="contact"><p>Tel: 11111 2222222222 | Mail: <a href="mailto:info@classicalart.com"/>info@classicalart.com</p></a></div>
             <div class="search-bar">
             <form>
                 <input type="text" placeholder="Search" name="Search">
@@ -37,7 +41,7 @@
                         <ul class="sub-menu">
                             <li><a href="puzzle.html">PUZZLE</a></li>
                             <li><a href="Forma3.html">CONTACT</a></li>
-                            <li><a href="">TABLE</a></li>
+                            <li><a href="tabela.html">ARTISTS</a></li>
                         </ul>    
                     </li>
                     <li><a href="gallery.html">GALLERY</a></li>
@@ -114,45 +118,28 @@
 <div class="content">
 
     <div id="block1">
-        <h3>Two Quarters</h3>
-  It is a long established fact that a reader will be distracted by the
-        readable content of a page when looking at its layout. The point of
-        using Lorem Ipsum is that it has a more-or-less normal distribution of
-        letters, as opposed to using 'Content here, content here', making it
-        look like readable English. Many desktop publishing packages and web
-        page editors now use Lorem Ipsum as their default model text, and a
-        search for 'lorem ipsum' will uncover many web sites still in their
-        infancy. Various versions have evolved over the years, sometimes by
-        accident, sometimes on purpose (injected humour and the like).It is a
-        long 
+        <h3>What is classical art ?</h3>
+  Classical art is the art which is associated with the classical period. In the Classical period there was a revolution in Greek statuary, usually associated with the introduction of democracy and the end of the aristocratic culture associated with the kouroi. The Classical period saw changes in the style and function of sculpture. Poses became more naturalistic and the technical skill of Greek sculptors in depicting the human form in a variety of poses greatly increased. From about 500 BC statues began to depict real people. 
           
 
-        <br><a href="#" class="rmlink">Read More »</a>
+        <br><a href="https://www.quora.com/What-is-classical-art" class="rmlink">Read More »</a>
     </div>
 
 
     <div id="block2">
-      <h3>One Quarters</h3>
-  It is a long established fact that a reader will be distracted by the
-        readable content of a page when looking at its layout. The point of
-        using Lorem Ipsum is that it has a more-or-less normal distribution of
-        letters, as opposed to using 'Content here, content here', making it
-        look like readable English.
+      <h3>Greek Art</h3>
+  In the early 5th century Greek artists began consciously to attempt to render human and animal forms realistically. This entailed careful observation of the model as well as understanding the mechanics of anatomy - how a body adjusts to a pose.
 
 
-        <br><a href="#" class="rmlink">Read More »</a>
+        <br><a href="https://www.quora.com/What-is-classical-art" class="rmlink">Read More »</a>
       </div>
 
 
     <div id="block3">
-      <h3>One Quarters</h3>
-        It is a long established fact that a reader will be distracted by the
-        readable content of a page when looking at its layout. The point of
-        using Lorem Ipsum is that it has a more-or-less normal distribution of
-        letters, as opposed to using 'Content here, content here', making it
-        look like readable English.
+      <h3>Early Classical Art</h3>
+        The new style is best expressed in the Parthenon marbles of about 450-435 BC but there was a preceding style of some importance - the Early Classical, sometimes called the Severe Style, which is exemplified in the sculptures for the Temple of Zeus at Olympia. 
 
-        <br><a href="#" class="rmlink">Read More »</a>
+        <br><a href="https://www.quora.com/What-is-classical-art" class="rmlink">Read More »</a>
       </div>
 
 </div>
@@ -211,6 +198,12 @@
     <div class="copyright">
                 <p>Copyright &copy; 2012 Domain Name - All rights reserved <span class="template">Template by OS templates</span></p>
             </div>
+
+            <p id="date" style="margin-left:480px;"></p>
+<script>
+var d = new Date();
+document.getElementById("date").innerHTML = d;
+</script>
     
     <script>
 var slideIndex = 1;

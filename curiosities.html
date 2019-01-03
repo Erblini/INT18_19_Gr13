@@ -1,8 +1,12 @@
-<html>
+<html manifest="manifest.appcache">
     <head>
+
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width; initial-scale=1; maximum-scale=1">
         <link rel="stylesheet" href="header.css">
         <link rel="stylesheet" href="curiosities.css">
         <link rel="stylesheet" href="dropdown.css">
+
         <title>Classical-Art</title>
     
     </head>
@@ -33,7 +37,7 @@
                         <ul class="sub-menu">
                             <li><a href="puzzle.html">PUZZLE</a></li>
                             <li><a href="Forma3.html">CONTACT</a></li>
-                            <li><a href="">TABLE</a></li>
+                            <li><a href="tabela.html">ARTISTS</a></li>
 
                         </ul>    
                     </li>
@@ -94,6 +98,43 @@
 
             
         </div>
+
+        <p style=" margin-left: 380px;">Please rate our work from 1 to 10 :</p>
+
+<input id="demo" type="text" style="margin-left:380px;"">
+<button type="button" onclick="myFunction()">Rate</button>
+
+<p id="p01" style="margin-left: 380px;"></p>
+
+<script>
+function myFunction() {
+  var message, x;
+  message = document.getElementById("p01");
+  message.innerHTML = "";
+  x = document.getElementById("demo").value;
+  try { 
+    if(x == "")  throw "is empty";
+    if(isNaN(x)) throw "is not a number";
+    x = Number(x);
+    if(x > 10)   throw "is too high";
+    if(x < 1)  throw "is too low";
+  }
+  catch(err) {
+    message.innerHTML = "Your rate " + err;
+  }
+  finally {
+    document.getElementById("demo").value = "";
+  }
+}
+</script>
+
+
+
+        <div class="copyright">
+                <p>Copyright &copy; 2012 Domain Name - All rights reserved <span class="template">Template by OS templates</span></p>
+            </div>
+
+
 
 
 

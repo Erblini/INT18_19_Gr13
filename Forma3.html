@@ -1,7 +1,11 @@
 <!DOCTYPE html>
-<html>
+<html manifest="manifest.appcache">
 <head>
-	<title>Contact</title>
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width; initial-scale=1; maximum-scale=1">
+	<title> Contact</title>
+
   <script>
     function allowDrop(ev){
       ev.preventDefault();
@@ -16,9 +20,10 @@
       ev.target.appendChild(document.getElementById(data));
     }
   </script>
-</head>
-<body style="background-color: #808080;">
 
+</head>
+
+<body style="background-color: #808080;">
 
     <div id="kutiaFormes" style="background-color:	#ebebeb ;margin-right:200px; padding:10px; border: solid 1px black" >
     <p style="color:black;">Please leave us a message!</p>

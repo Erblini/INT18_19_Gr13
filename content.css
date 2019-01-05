@@ -9,13 +9,6 @@ body  {
 }
 
 
-/* shtimi i fontit */
-@font-face {
-    font-family: angltrrj;
-    src: url(Fonts/angltrr.ttf);
-}
-
-
 /* trupi i slideshow */
 .slideshow-quotes {
     font-family: helvetica, sans-serif;
